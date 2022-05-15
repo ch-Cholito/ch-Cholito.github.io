@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+  background: #e9f5ff; /* fallback for old browsers */
+  background: rgb(192, 204, 231);
+  background: linear-gradient(90deg, rgb(171, 202, 241) 0%, rgb(214, 226, 248) 50%);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.login-page .textRegistered{
+  text-align: center;
+  font-size: 5vh;
+  color: #89abc2;
+  display: none;
+}
+
+.login-page .textNonRegistered{
+  text-align: center;
+  font-size: 5vh;
+  color: #89abc2;
+}
+
+.form {
+  
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 500px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 5%;
+}
+.form.registered {
+  display: none;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #ffffff;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form .notAccepted{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #ffffff;
+  width: 100%;
+  border: 1px solid #89abc2;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #89abc2;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #5372a0;
+}
+
+
+
+
