@@ -31,7 +31,3 @@ form.classList.add("registered");
 }
 }
 
-function colorMe () {
-document.getElementsByTagName("input").classList.add("")
-
-}
