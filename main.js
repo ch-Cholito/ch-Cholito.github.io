@@ -1,40 +1,37 @@
-function checkName() {
+function checkForm() {
     let name = document.getElementById("name");
     let surname = document.getElementById("surname");
     let age = document.getElementById("age");
     let email = document.getElementById("email");
     let password = document.getElementById("password");
-    let text = document.getElementsByTagName("p")
-    let form = document.getElementsByClassName("form")
+    let text = document.getElementById("text")
+    let form = document.getElementById("form")
+
     if (name.value == '') {
-        name.classList.add("notAccepted");
-    } else {
-        name.classList.remove("notAccepted");
+        alert ("Please, enter your name");
+}
+    else if (surname.value == '') {
+        alert ("Please, enter your surname");
     }
-
-    if (surname.value == '') {
-        surname.classList.add("notAccepted");
-    } else {
-        surname.classList.remove("notAccepted");
+   else if (age.value == '') {
+   alert ("Please, enter your age");
+   }
+   else if (email.value == '') {
+    alert ("Please, enter email adress");
     }
-
-    if (age.value == '') {
-        age.classList.add("notAccepted");
-    } else {
-        age.classList.remove("notAccepted");
+    else if (password.value ==''){
+        alert ("Please, enter password");
     }
-
-    if (email.value == '') {
-        email.classList.add("notAccepted");
-    } else {
-        email.classList.remove("notAccepted");
-
+    else if (password.value.length < 6){
+        alert ("Password length should be not less than 6 sympols");
     }
-    if (password.value == '') {
-        password.classList.add("notAccepted");
-    } else {
-        password.classList.remove("notAccepted");
+else {
+text.classList.remove("textNonRegistered");
+form.classList.add("registered");
+}
+}
 
-    }
+function colorMe () {
+document.getElementsByTagName("input").classList.add("")
 
 }

@@ -17,13 +17,10 @@ body {
   text-align: center;
   font-size: 5vh;
   color: #89abc2;
-  display: none;
 }
 
 .login-page .textNonRegistered{
-  text-align: center;
-  font-size: 5vh;
-  color: #89abc2;
+  display: none;
 }
 
 .form {
@@ -52,19 +49,13 @@ body {
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+  
 }
 
-.form .notAccepted{
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  background: #ffffff;
-  width: 100%;
-  border: 1px solid #89abc2;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
+.form input:hover{
+  border-bottom: 1.5px solid #6c99b8;
 }
+
 .form button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
