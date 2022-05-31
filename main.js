@@ -8,17 +8,17 @@ function checkForm() {
     let form = document.getElementById("form");
 
     if (name.value == '') {
-        document.getElementbyId('enterName').innerHTML += "Please, enter your name";
+        document.getElementById('enterName').innerHTML += "Please, enter your name";
     } else if (surname.value == '') {
-        alert("Please, enter your surname");
+        document.getElementById('enterSurname').innerHTML += "Please, enter your surname";
     } else if (age.value == '') {
-        alert("Please, enter your age");
+        document.getElementById('enterAge').innerHTML += "Please, enter your age";
     } else if (email.value == '') {
-        alert("Please, enter email adress");
+        document.getElementById('enterEmail').innerHTML += "Please, enter email";
     } else if (password.value == '') {
-        alert("Please, enter password");
+        document.getElementById('enterPassword').innerHTML += "Please, enter password";
     } else if (password.value.length < 6) {
-        alert("Password length should be not less than 6 sympols");
+        document.getElementById('enterSymbols').innerHTML += "Password length should be not less than 6 sympols";
     } else {
         text.classList.remove("textNonRegistered");
         form.classList.add("registered");
